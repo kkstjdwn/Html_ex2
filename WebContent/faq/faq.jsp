@@ -92,7 +92,7 @@
 				 <textarea placeholder="추가로 작성하실 질문 내용을 작성하세요"></textarea>
 				 <p>첨부파일</p>
 				 <input type="file">
-				 <a href="/Html_ex2/index.jsp"><button>계속</button></a>
+				 <a href="/Html_ex2/index.jsp"><button>전송</button></a>
 				  
 			</div>
 		
