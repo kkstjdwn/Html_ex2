@@ -63,7 +63,7 @@
 				</div>
 				<div class="sn_1_2">
 					<ul>
-						<li><a href="">FAQ</a></li>
+						<li><a href="../faq/faq.jsp">FAQ</a></li>
 						<li>Apple ID 생성</li>
 						<li><a href="signIn.jsp">로그인</a></li>
 					</ul>

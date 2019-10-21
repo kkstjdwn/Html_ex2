@@ -60,7 +60,7 @@
 		<div class="sn_1_1"> <h3>Apple ID</h3> </div>
 		<div class="sn_1_2">
 		<ul>
-		<li><a href="">FAQ</a></li>
+		<li><a href="/Html_ex2/faq/faq.jsp">FAQ</a></li>
 		<li><a href="signUp.jsp">Apple ID 생성</a></li>
 		<li>로그인</li>
 		</ul>
