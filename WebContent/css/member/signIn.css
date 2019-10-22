@@ -64,37 +64,40 @@ header{
 }
 .sn_sc1_i1{
 	position :absolute;
-	top : 40.5%;
+	top : 40.2%;
 	left: 41.3%;
 	width: 330px;
 	height: 42px;
+	border-radius: 10px;
 }
 .sn_sc1_i2{
 	position :absolute;
-	top : 48.8%;
+	top : 49%;
 	left: 41.3%;
 	width: 330px;
 	height: 42px;
+	border-radius: 10px;
 }
 .sn_sc1_1{
 	color:white;
-	font-size : 12px;
+	font-size : 15px;
 	position: absolute;
-	top: 65%;
+	top: 65.7%;
 	left: 47%;
 }
 .sn_sc1_2{
 	color:white;
-	font-size : 12px;
+	font-size : 14px;
 	position: absolute;
-	top: 65%;
+	top: 65.4%;
 	left: 48.5%;
+	line-height: inherit;
 }
 .sn_sc1_3{
 	color:white;
 	font-size : 12px;
 	position: absolute;
-	top: 89%;
+	top: 89.6%;
 	left: 44%;
 	font-weight: bold;
 }
@@ -114,11 +117,11 @@ header{
 	left: 48.5%;
 	font-weight: bold;
 }
-.sn_sc1_4 a{
+.sn_sc1_4 button{
 	color: white;
 	text-decoration: none;
 }
-.sn_sc1_4 a:hover{
+.sn_sc1_4 button:hover{
 	color: white;
 	text-decoration: underline;
 }

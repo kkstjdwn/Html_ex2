@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,17 +12,15 @@
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/member/signIn.css" rel="stylesheet">
 <link href="/Html_ex2/css/member/signUp.css" rel="stylesheet">
-<link href="/Html_ex2/css/faq/faq.css" rel="stylesheet">
-<title>Apple ID에 대해 자주 묻는 질문</title>
+<title>Apple(대한민국) 약관동의</title>
+
 </head>
 <body>
-
-	<header>
+		<header>
 		<div class="header_main">
 			<a href=""></a>
 			<div class="hr_logo">
-				<a href="/Html_ex2/index.jsp"><i class='fab fa-apple'
-					style='font-size: 20px'></i></a>
+				<a href="/Html_ex2/index.jsp"><i class='fab fa-apple' style='font-size: 20px'></i></a>
 			</div>
 			<div>
 				<a href="">Mac</a>
@@ -54,58 +52,41 @@
 
 
 		</div>
-		<!--로그인섹션**********************************************************************-->
-		<div class="sn_head">
-			<div class="sn_1">
-
-				<div class="sn_1_1">
-					<h3>Apple ID</h3>
-				</div>
-				<div class="sn_1_2">
-					<ul>
-						<li>FAQ</li>
-						<li><a href="/Html_ex2/member/check.jsp">Apple ID 생성</a></li>
-						<li><a href="/Html_ex2/member/signIn.jsp">로그인</a></li>
-					</ul>
-				</div>
-			</div>
-
-
-		</div>
-	</header>
-
-	
-	<section>
-		<img alt="대문" src="../images/faq/FAQ.png">
-			<div id="faq_main">
-				<p>질문 제목</p>
-				<select>
-					<option>Apple ID란 무엇입니까?</option>
-					<option>Apple ID는 언제 사용합니까?</option>
-					<option>Apple ID는 몇 개가 필요합니까?</option>
-					<option>다른 사람과 Apple ID를 공유 할 수 있습니까?</option>
-					<option>Apple ID를 안전하게 지키는 방법은 무엇입니까?</option>
-				</select>
-				 <br> 
-				 질문자<input type="text" placeholder="Apple ID를 입력하세요">
-				 추가 작성 내용
-				 <textarea placeholder="추가로 작성하실 질문 내용을 작성하세요"></textarea>
-				 <p>첨부파일</p>
-				 <input type="file">
-				 <a href="/Html_ex2/index.jsp"><button>전송</button></a>
-				  
-			</div>
+<!--로그인섹션**********************************************************************-->
+	<div class="sn_head">
+		<div class="sn_1" >
 		
-
-
-
-
-
-
+		<div class="sn_1_1"> <h3>Apple ID</h3> </div>
+		<div class="sn_1_2">
+		<ul>
+		<li><a href="/Html_ex2/faq/faq.jsp">FAQ</a></li>
+		<li>Apple ID 생성</li>
+		<li><a href="/Html_ex2/member/signIn.jsp">로그인</a></li>
+		</ul>
+		</div>
+		</div>
 	
-
-</section>
-	<footer>
+	
+	</div>		
+		
+		
+		
+		
+	</header>
+	<section>
+	<img alt="대문" src="/Html_ex2/images/member/su1.png">
+	<div class="signUp_5">
+		<div class="up_5_1">
+			<input type="checkbox">
+		
+			<p><a href="">Apple의 개인정보 처리방침</a> 에 따라 개인 정보를 수집, 사용, 처리하고 타사에 제공하는 데 동의합니다.</p>
+			<div class="button1">
+			<a href="/Html_ex2/member/signUp.jsp"><button>계속</button></a>
+			</div>
+		</div>
+		</div>
+	</section>
+<footer>
 		<div class="sn_ft">
 			<div class="ft_ft2_1">
 				다양한 쇼핑 방법: 080-330-8877번으로 전화 또는 <a href="">가까운 Apple 공인 리셀러 찾기</a>
@@ -120,10 +101,5 @@
 			</div>
 		</div>
 	</footer>
-
-
-
-
-
 </body>
 </html>

@@ -36,7 +36,7 @@
 				<span class="hd_music"><a href="">Music</a></span>
 			</div>
 			<div>
-				<span class="hd_cus"><a href="">고객지원</a></span>
+				<span class="hd_cus"><a href="/Html_ex2/member/signIn.jsp">고객지원</a></span>
 			</div>
 			<div class="hd_search">
 				<a href=""><i class="fa fa-search" style='font-size: 17px'></i></a>
@@ -142,7 +142,7 @@
 <!-- 		****************************************************로그인페이지 -->
 		<li><a href="/Html_ex2/member/signIn.jsp">Apple ID 관리</a></li>
 		<li><a href="">Apple Store 관리</a></li>
-		<li><a href=""></a>iCloud.com</li>
+		<li><a href="">iCloud.com</a></li>
 		</ul>
 			</div>
 			<div class = "ft_con3">

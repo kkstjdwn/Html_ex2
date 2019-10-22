@@ -12,6 +12,20 @@
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/member/signIn.css" rel="stylesheet">
+<script type="text/javascript">
+	function warning() {
+		var id = document.getElementById("id").value;
+		var pw = document.getElementById("pw").value;
+		
+		if (id=="" || pw=="") {
+			alert("Apple ID와 PW를 입력하세요");
+		}else{
+			alert("넘어가는거");
+		}
+		
+	}
+
+</script>
 <!-- 로그인페이지 **********************************************************-->
 <title>Apple (대한민국)</title>
 </head>
@@ -39,7 +53,7 @@
 				<span class="hd_music"><a href="">Music</a></span>
 			</div>
 			<div>
-				<span class="hd_cus"><a href="">고객지원</a></span>
+				<span class="hd_cus"><a href="/Html_ex2/member/signIn.jsp">고객지원</a></span>
 			</div>
 			<div class="hd_search">
 				<a href=""><i class="fa fa-search" style='font-size: 17px'></i></a>
@@ -61,7 +75,7 @@
 		<div class="sn_1_2">
 		<ul>
 		<li><a href="/Html_ex2/faq/faq.jsp">FAQ</a></li>
-		<li><a href="signUp.jsp">Apple ID 생성</a></li>
+		<li><a href="check.jsp">Apple ID 생성</a></li>
 		<li>로그인</li>
 		</ul>
 		</div>
@@ -78,11 +92,16 @@
 <section>
 	<div class="sn_sc1">
 		<img alt="1번사진" src="/Html_ex2/images/member/sn1.png">
-		<input class="sn_sc1_i1" type="text" placeholder="Apple ID & E-mail">
-		<input class="sn_sc1_i2" type="text" placeholder="Apple PW">
+		<input id="id" class="sn_sc1_i1" type="text" placeholder="Apple ID & E-mail">
+		<input id="pw" class="sn_sc1_i2" type="text" placeholder="Apple PW">
+	<form>
 		<p class="sn_sc1_1"><input type="checkbox"></p>
 		<p class="sn_sc1_2">아이디 저장</p>
-		<p class="sn_sc1_4"><a href="/Html_ex2/index.jsp">SIGN IN</a>
+		<p class="sn_sc1_4">
+		<button>SIGN IN</button><br>
+		<input type="submit">
+		<input type="button" value="SIGN IN" onclick="warning()"></p>
+	</form>
 		<p class="sn_sc1_3"><a href="">Apple ID 또는 암호를 잊으셨습니까?</a>
 		</p>
 	</div>
