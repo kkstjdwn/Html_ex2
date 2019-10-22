@@ -16,13 +16,21 @@
 	function warning() {
 		var id = document.getElementById("id").value;
 		var pw = document.getElementById("pw").value;
-		
+		var ch = false;
+		if (id=="") {
+			document.getElementById("id").placeholder = "##ID를 입력해주세요";
+		}
+		if (pw=="") {
+			document.getElementById("pw").placeholder = "##PW를 입력해주세요"
+		}
 		if (id=="" || pw=="") {
 			alert("Apple ID와 PW를 입력하세요");
 		}else{
 			alert("넘어가는거");
+			ch = true;
 		}
 		
+		return ch;
 	}
 
 </script>
@@ -94,13 +102,11 @@
 		<img alt="1번사진" src="/Html_ex2/images/member/sn1.png">
 		<input id="id" class="sn_sc1_i1" type="text" placeholder="Apple ID & E-mail">
 		<input id="pw" class="sn_sc1_i2" type="text" placeholder="Apple PW">
-	<form>
+	<form action="/Html_ex2/index.jsp">
 		<p class="sn_sc1_1"><input type="checkbox"></p>
 		<p class="sn_sc1_2">아이디 저장</p>
 		<p class="sn_sc1_4">
-		<button>SIGN IN</button><br>
-		<input type="submit">
-		<input type="button" value="SIGN IN" onclick="warning()"></p>
+		<button onclick="return warning()" >SIGN IN</button><br>
 	</form>
 		<p class="sn_sc1_3"><a href="">Apple ID 또는 암호를 잊으셨습니까?</a>
 		</p>

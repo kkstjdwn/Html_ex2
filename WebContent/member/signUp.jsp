@@ -152,7 +152,7 @@
 		
 			<p><a href="">Apple의 개인정보 처리방침</a> 에 따라 개인 정보를 수집, 사용, 처리하고 타사에 제공하는 데 동의합니다.</p>
 			<div class="button1">
-			<a href="/Html_ex2/member/signIn.jsp"><button>계속</button></a>
+			<a href="/Html_ex2/member/signIn.jsp"><button>완료</button></a>
 			</div>
 		</div>
 		</div>
