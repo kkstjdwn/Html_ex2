@@ -16,12 +16,20 @@
 	function warning() {
 		var id = document.getElementById("id").value;
 		var pw = document.getElementById("pw").value;
+		var idsp = document.getElementById("id_sp");
+		var pwsp = document.getElementById("pw_sp");
 		var ch = false;
 		if (id=="") {
-			document.getElementById("id").placeholder = "##ID를 입력해주세요";
+			//idsp.setAttribute("display","block");
+			idsp.style.display="block";
+		}else{
+			idsp.style.display="none";
 		}
 		if (pw=="") {
-			document.getElementById("pw").placeholder = "##PW를 입력해주세요"
+			//pwsp.setAttribute("display","block");
+			pwsp.style.display="block";
+		}else{
+			pwsp.style.display="none";
 		}
 		if (id=="" || pw=="") {
 			alert("Apple ID와 PW를 입력하세요");
@@ -30,8 +38,21 @@
 			ch = true;
 		}
 		
+			
+		
 		return ch;
 	}
+	
+	var id = document.getElementById("id");
+	id.addEventListener("click",function(){
+		var sp = document.getElementById("id_sp");
+		sp.style.display="none";
+	});
+	var pw = document.getElementById("pw");
+	pw.addEventListener("click",function(){
+		var sp = document.getElementById("pw_sp");
+		sp.style.display="none";
+	});
 
 </script>
 <!-- 로그인페이지 **********************************************************-->
@@ -101,7 +122,9 @@
 	<div class="sn_sc1">
 		<img alt="1번사진" src="/Html_ex2/images/member/sn1.png">
 		<input id="id" class="sn_sc1_i1" type="text" placeholder="Apple ID & E-mail">
+		<span id="id_sp">ID를 입력해주세요</span>
 		<input id="pw" class="sn_sc1_i2" type="text" placeholder="Apple PW">
+		<span id="pw_sp">PW를 입력해주세요</span>
 	<form action="/Html_ex2/index.jsp">
 		<p class="sn_sc1_1"><input type="checkbox"></p>
 		<p class="sn_sc1_2">아이디 저장</p>
@@ -116,7 +139,7 @@
 		<p class="sn_sc2_1">하나의 Apple ID와 암호로 모든 Apple 서비스를 이용할 수<br> 있습니다.
 		<a href="">Apple ID에 대한 추가 정보</a> ></p>
 		<p class="sn_sc2_2">
-		<a href="signUp.jsp">Apple ID 생성</a> >
+		<a href="check.jsp">Apple ID 생성</a> >
 		</p>
 </div>
 </section>

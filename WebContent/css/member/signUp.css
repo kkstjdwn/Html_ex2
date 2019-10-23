@@ -157,8 +157,6 @@ section div{
 	width: 1200px;
 	height: auto;
 	margin:auto;
-	border-bottom: 1px solid #d6d6d6;
-	color: #666666;
 	font-size: 12px;
 	
 }
@@ -166,6 +164,15 @@ section div{
 	height: auto;
 	width: 490px;
 	margin: 20px auto 10px;
+}
+#sp5_1{
+	color:red;
+	font-size: 10px;
+	opacity: 60%;
+	line-height: inherit;
+}
+#up_5_1_p{
+	color: #666666;
 }
 
 .up_5_1 a{

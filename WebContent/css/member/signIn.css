@@ -70,6 +70,14 @@ header{
 	height: 42px;
 	border-radius: 10px;
 }
+#id_sp{
+	position :absolute;
+	top : 42.2%;
+	left: 53%;
+	color:rgba(255,0,0,0.7);
+	font-size: 12px;
+	display: none;
+}
 .sn_sc1_i2{
 	position :absolute;
 	top : 49%;
@@ -77,6 +85,14 @@ header{
 	width: 330px;
 	height: 42px;
 	border-radius: 10px;
+}
+#pw_sp{
+	position :absolute;
+	top : 51%;
+	left: 53%;
+	color:rgba(255,0,0,0.7);
+	font-size: 12px;
+	display: none;
 }
 .sn_sc1_1{
 	color:white;

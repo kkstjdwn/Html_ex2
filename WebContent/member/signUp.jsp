@@ -133,24 +133,10 @@
 		
 		</div>
 		</div>
-		<div class="signUp_4">
-		<div class="up_4_1">
-		<input type="checkbox"> 공지사항
-		<p>Apple 제품, 서비스 및 소프트웨어에 대한 공지사항, 추천 및 업데이트를 받아봅니다</p>
-		</div>
-		<br>
-		<div class="up_4_2">
-		<input type="checkbox"> 앱, 음악, 영화 등
-		<p>앱, 음악, 영화, TV, 도서, 팟캐스트 등에 대한 신규 출시 정보, 독점 콘텐츠, 특별 할인 및 추천을 받아봅니다.</p>
 		
-		</div>
-		</div>
 		
 		<div class="signUp_5">
 		<div class="up_5_1">
-			<input type="checkbox">
-		
-			<p><a href="">Apple의 개인정보 처리방침</a> 에 따라 개인 정보를 수집, 사용, 처리하고 타사에 제공하는 데 동의합니다.</p>
 			<div class="button1">
 			<a href="/Html_ex2/member/signIn.jsp"><button>완료</button></a>
 			</div>

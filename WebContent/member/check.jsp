@@ -75,13 +75,26 @@
 	</header>
 	<section>
 	<img alt="대문" src="/Html_ex2/images/member/su1.png">
-	<div class="signUp_5">
-		<div class="up_5_1">
-			<input type="checkbox">
+	<div class="signUp_4">
+		<div class="up_4_1">
+		<input type="checkbox"> 공지사항
+		<p>Apple 제품, 서비스 및 소프트웨어에 대한 공지사항, 추천 및 업데이트를 받아봅니다</p>
+		</div>
+		<br>
+		<div class="up_4_2">
+		<input type="checkbox"> 앱, 음악, 영화 등
+		<p>앱, 음악, 영화, TV, 도서, 팟캐스트 등에 대한 신규 출시 정보, 독점 콘텐츠, 특별 할인 및 추천을 받아봅니다.</p>
 		
-			<p><a href="">Apple의 개인정보 처리방침</a> 에 따라 개인 정보를 수집, 사용, 처리하고 타사에 제공하는 데 동의합니다.</p>
+		</div>
+		</div>
+		
+		<div class="signUp_5">
+		<div class="up_5_1">
+			<input class="checkBox1" type="checkbox"><span id = "sp5_1">(필수)</span>
+		
+			<p id = "up_5_1_p"><a href="">Apple의 개인정보 처리방침</a> 에 따라 개인 정보를 수집, 사용, 처리하고 타사에 제공하는 데 동의합니다.</p>
 			<div class="button1">
-			<a href="/Html_ex2/member/signUp.jsp"><button>계속</button></a>
+			<a id="move" href="/Html_ex2/member/signUp.jsp"><button id="next">계속</button></a>
 			</div>
 		</div>
 		</div>
@@ -101,5 +114,20 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		var move = document.getElementById("move");
+		var ch = document.getElementsByClassName("checkBox1");
+		var next = document.getElementById("next");
+		next.addEventListener("click",function(){
+			if (ch[0].checked==false) {
+				alert("필수항목에 동의해주세요.");
+				move.setAttribute("href","./check.jsp");
+			}else{
+				location.href("singUp.jsp");
+			}
+		});
+		
+	
+	</script>
 </body>
 </html>
