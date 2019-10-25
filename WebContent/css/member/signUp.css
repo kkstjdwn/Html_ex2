@@ -16,10 +16,16 @@ section div{
 	float: none;
 	
 }
-
+select{
+	width:100%;
+	height: 30px;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
 .signUp_1{
 	width: 1200px;
-	height: 286px;
+	height: 326px;
 	margin: auto;
 	border-bottom: 1px solid #d6d6d6;
 }
@@ -30,11 +36,19 @@ section div{
 	background-color: white;
 	margin: auto;
 }
-.up_1_1 p{
+#up_1_p1{
 	text-align: center;
+	color: black;
+}
+#up_1_p1 a:hover{
+	font-weight: bold;
+	font-size: 1.08em;
+}
+.up_1_1 p{
 	color: black;
 	font-size: 13px;
 	font-weight:bold;
+	color: #666666;
 }
 .up_1_1 a{
 	color: #0070c9;
@@ -48,32 +62,37 @@ section div{
 }
 
 .up_1_i1{
-	width: 45%;
+	width: 49%;
 	height: 55px;
-	margin-left:3%;
+	margin:auto;
 	border: 1px solid #d6d6d6;
+	border-radius: 5px;
 }
 .up_1_i2{
-	width: 45%;
+	width: 49%;
 	height: 55px;
-	margin-right:3%;
+	margin:auto;
 	border: 1px solid #d6d6d6;
+	border-radius: 5px;
 }
 
 #up_1_2{
 	
 	width:490px;
 	margin: 10px auto;
-	text-align: center;
+	
 }
 
 .up_1_2_i1{
 	width:100%;
-	height: 54px;
+	height: 30px;
 	margin: auto;
-	font-size: 20px;
+	font-size: 18px;
 	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	
 }
+
 
 .signUp_2{
 	width: 1200px;
@@ -93,6 +112,8 @@ section div{
 	width: 100%;
 	height: 30px;
 	font-size: 20px;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
 }
 
 .up_2_1 p{
@@ -104,13 +125,13 @@ section div{
 
 .signUp_3{
 	width: 1200px;
-	height: auto;
+	height:auto;
 	margin:auto;
-	border-bottom: 1px solid #d6d6d6;
 }
 
-.signup_3 select{
+.up_3_1 select{
 	margin-top: 20px;
+	border-radius: 5px;
 }
 .up_3_1{
 	width: 490px;
@@ -123,6 +144,8 @@ section div{
 	height: 30px;
 	font-size: 20px;
 	margin-bottom: 20px;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
 }
 
 .signUp_4{
@@ -200,9 +223,51 @@ section div{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 15px;
 }
 footer{
 	position:relative;
 	clear: both;
 	margin-top: 10px;
 }
+/* 스크립트 css ****************************************/
+#id_ck_p{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+}
+#pw_ck_p{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+}
+#pw_ck2_p{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+}
+#ph_ck_p{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+}
+#em_ck_p{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+#name_ck2{
+	color: rgba(255,0,0,0.7);
+	font-size: 11px;
+}
+#id_bt{
+	background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border: 1px solid #0070c9;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+	
+}
+
+
+
+
+
+

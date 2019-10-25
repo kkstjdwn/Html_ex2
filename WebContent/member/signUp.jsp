@@ -12,6 +12,8 @@
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/member/signIn.css" rel="stylesheet">
 <link href="/Html_ex2/css/member/signUp.css" rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>Apple ID 관리 - Apple (KR)</title>
 </head>
 
@@ -78,14 +80,14 @@
 		<div class="signUp_1">
 			<div class="up_1_1">
 				<br>
-				<p>
+				<p id="up_1_p1">
 					하나의 Apple ID로 모든 Apple 서비스를 이용할 수 있습니다.<br> Apple ID를 가지고
 					계십니까? <a href="">찾아보기</a>
 				</p>
 				<br>
-				<input class="up_1_i1" type="text" placeholder="성">
-				<input class="up_1_i2" type="text" placeholder="이름">
-				<br>
+				<input class="up_1_i1 name_ck" type="text" placeholder="성">
+				<input class="up_1_i2 name_ck" type="text" placeholder="이름">
+				<p id="name_ck2"></p>
 				<div id = "up_1_2">
 				<br>
 				<p>국가/지역</p>
@@ -103,16 +105,23 @@
 		</div>
 		<div class="signUp_2">
 			<div class="up_2_1">
-				<input type="text" placeholder="E-mail @ example.com">
-				<p>새 Apple ID로 사용될 주소입니다.</p>
-				<input type="password" placeholder="암호">
-				<br>
-				<input type="password" placeholder="암호 확인">
+				<input type="text" placeholder="Apple ID" id="id_ck">
+<!-- 				중복확인 버튼 만들었는데 안이뻐서 주석*************************************** -->
+<!-- 				<p><button id="id_bt">중복확인</button><span id="id_ck"></span></p> -->
+				<p id="id_ck_p"></p>
+				<input type="password" placeholder="암호" id="pw_ck">
+				<p id="pw_ck_p"></p>
+				<input type="password" placeholder="암호 확인" id="pw_ck2">
+				<p id="pw_ck2_p"></p>
+				<input type="password" placeholder="전화번호 입력" id="ph_ck">
+				<p id ="ph_ck_p"></p>
+				<input type="password" placeholder="답변 확인 E-mail 입력" id="em_ck">
+				<p id="em_ck_p"></p>
 			</div>
 		</div>
 		<div class="signUp_3">
 		<div class="up_3_1">
-		<select >
+		<select>
 		<optgroup label="보안 질문 1"></optgroup>
 		<option>10대 시절 가장 친하게 지냈던 친구의 이름은 무엇입니까?</option>
 		<option>첫 애완동물의 이름은 무엇입니까?</option>
@@ -121,7 +130,7 @@
 		</select>
 		<input type="text" placeholder="답변">
 		<br>
-		<select >
+		<select>
 		<optgroup label="보안 질문 2"></optgroup>
 		<option>꿈의 직업은 무엇입니까?</option>
 		<option>가장 좋아했던 동화책의 제목은 무엇입니까?</option>
@@ -164,5 +173,52 @@
 			</div>
 		</div>
 	</footer>
+	
+	<!-- 스크립트*********************************************************************** -->
+	<script type="text/javascript">
+	var fc = $(".name_ck");
+		focus(fc[0]);
+		$(".name_ck").blur(function() {
+			if (this.value=="") {
+				
+			$("#name_ck2").html("성/이름은 필수 입력입니다.");
+			}else{
+				$("#name_ck2").empty();
+			}
+
+		});
+		$("#id_ck").blur(function() {
+			if (this.value=="abcdef") {
+				$("#id_ck_p").css("color","rgba(255,0,0,0.7)");
+				$("#id_ck_p").html("중복된 ID 입니다");
+			}else{
+				$("#id_ck_p").css("color","rgba(0,0,255,0.7)");
+				$("#id_ck_p").html("사용가능한 Apple ID 입니다.");
+			}
+			if(this.value.length<6){
+				$("#id_ck_p").css("color","rgba(255,0,0,0.7)");
+				$("#id_ck_p").html("ID는 6자 이상 입력해야 합니다");
+			}
+		});
+		$("#pw_ck").blur(function() {
+			if (this.value.length<10) {
+				$("#pw_ck_p").css("color","rgba(255,0,0,0.7)");
+				$("#pw_ck_p").html("PW는 10자 이상 설정해야 합니다.");
+			}else{
+				$("#pw_ck_p").css("color","rgba(0,0,255,0.7)");
+				$("#pw_ck_p").html("사용가능한 PW입니다.");
+			}
+		});
+		$("#pw_ck2").blur(function() {
+			if (this.value!=$("#pw_ck").val()) {
+				$("#pw_ck2_p").css("color","rgba(255,0,0,0.7)");
+				$("#pw_ck2_p").html("설정한 PW와 다릅니다.");
+			}else{
+				$("#pw_ck2_p").css("color","rgba(0,0,255,0.7)");
+				$("#pw_ck2_p").html("설정한 PW와 같습니다.");
+			}
+		});
+	
+	</script>
 </body>
 </html>
